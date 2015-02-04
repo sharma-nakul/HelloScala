@@ -1,7 +1,5 @@
 buildscript {
     repositories {
-	    maven { url "http://repo.spring.io/snapshot" }
-	    maven { url "http://repo.spring.io/milestone" }
 	    maven { url "http://repo.spring.io/release" }
             mavenCentral()
 	    mavenLocal()
@@ -29,15 +27,13 @@ bootRepackage {
 
 repositories {
     mavenCentral()
-    maven { url "http://repo.spring.io/snapshot" }
-    maven { url "http://repo.spring.io/milestone" }
     maven { url "http://repo.spring.io/release" }
  }
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-web:1.2.1.RELEASE")
     testCompile("org.springframework.boot:spring-boot-starter-test")
-    compile("org.scala-lang:scala-library:2.10.4")
+    compile("org.scala-lang:scala-library:2.11.4")
     compile("org.webjars:bootstrap:3.1.1")
     testCompile("junit:junit")
 }
