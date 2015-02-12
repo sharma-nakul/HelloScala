@@ -3,6 +3,7 @@ package hello
 import org.springframework.context.annotation.{Configuration, ComponentScan}
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.web.bind.annotation._
+import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * This config class will trigger Spring @annotation scanning and auto configure Spring context.
@@ -17,5 +18,5 @@ import org.springframework.web.bind.annotation._
 class HelloConfig {
 @RequestMapping (value = Array("/"), method = Array (RequestMethod.GET))
 @ResponseBody
-    def home(): String = "Hello World"
+    def home(): String = "Hello, World. This is Scala"
   }
