@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation._
 /**
  * This config class will trigger Spring @annotation scanning and auto configure Spring context.
  *
- * @author saung
+ * @author Nakul Sharma
  * @since 1.0
  */
 @Configuration
